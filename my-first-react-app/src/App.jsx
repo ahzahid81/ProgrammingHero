@@ -2,22 +2,46 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import ToDo from './Todo'
+import Actor from './actor'
+import Singer from './Singer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const actors = ['Bappa Raj', 'Omar Sunny', 'Salaman Shah', 'Jasim', 'Anwar'];
+
+  const singers = [
+    {id: 1, name: 'Dr Mahfuz', age: 68},
+    {id: 2, name: 'Tahsan', age: 45},
+    {id: 3, name: 'Shuvro Deb', age: 57},
+  ]
 
   return (
     <>
-      <div>
+      {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
-      </div>
+      </div> */}
       <h1>React Core Concepts</h1>
-      <Student></Student>
+{/* 
+      {
+        singers.map(singer => <Singer></Singer> )
+      } */}
+      {
+        singers.map(singer => <Singer singer={singer}></Singer>)
+      }
+
+
+      {
+        actors.map(actor => <Actor actor = {actor}></Actor>)
+      }
+      {/* <ToDo task="Learn React" isDone = {true}></ToDo>
+      <ToDo task="Revise JS" isDone = {true}></ToDo>
+      <ToDo task="Take a shower" isDone = {false}></ToDo> */}
+      {/* <Student></Student>
       <Student></Student>
       <Person></Person>
       <Developer name = "Mozumder" tech = "JS"></Developer>
@@ -26,7 +50,7 @@ function App() {
       <Player name="tamim" runs = "5000"></Player>
       <Player name="Mushi" runs = "5000"></Player>
       <Salami event="Roja Eid" amount = "20"></Salami>
-      <Salami event="Graduation" amount = "500"></Salami>
+      <Salami event="Graduation" amount = "500"></Salami> */}
 
     </>
   )
