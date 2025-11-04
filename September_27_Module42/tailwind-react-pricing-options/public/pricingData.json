@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "plan": "Student",
+    "price": "9",
+    "currency": "$",
+    "billingCycle": "month",
+    "description": "Perfect for learners who want to start small",
+    "features": [
+      "1 User",
+      "Access to essential tools",
+      "5 Projects"
+    ]
+  },
+  {
+    "id": 2,
+    "plan": "Basic",
+    "price": "29",
+    "currency": "$",
+    "billingCycle": "month",
+    "description": "For individuals who need more flexibility",
+    "popular" : true,
+    "features": [
+      "Up to 2 Users",
+      "All Student features",
+      "20 Projects",
+      "Email support"
+    ]
+  },
+  {
+    "id": 3,
+    "plan": "Family",
+    "price": "59",
+    "currency": "$",
+    "billingCycle": "month",
+    "description": "Great for small teams or families collaborating together",
+    "features": [
+      "Up to 5 Users",
+      "All Basic features",
+      "Unlimited Projects",
+      "Priority support",
+      "50 GB cloud storage"
+    ]
+  }
+]

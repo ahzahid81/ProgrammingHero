@@ -1,0 +1,20 @@
+import React from 'react';
+import { useLoaderData, useParams } from 'react-router';
+
+const UserDetails = () => {
+    const user = useLoaderData();
+
+    const {userId} = useParams();
+    console.log(userId);
+    const {website, name} = user
+    
+    return (
+        <div>
+            <h3>User Details here</h3>
+            <h5>Name: {name}</h5>
+            <h5>Website: {website}</h5>
+        </div>
+    );
+};
+
+export default UserDetails;
